@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caseload Manager</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body class= "container, bg-light">
+
+    <h1>Ultimate Caseload Manager</h1>
+    <p class="text-primary">Organize your students with ease.</p>
+<br>
+<div class="card border-primary mb-3" style="max-width: 100rem;">
+    <div class="card-header">Add To Your Caseload</div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-sm">
+                <div class="form-group">
+                <label for="firstName">First Name </label>
+                 <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                 </div>
+            </div>
+            <div class="col-sm">
+                <div class="form-group">
+                 <label for="=lastName">Last Name </label>
+                 <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="form-group">  
+                <label for="DOB">Date of Birth</label>
+                <input type="date" class="form-control" id="DOB">
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="form-group">  
+                <label for="disabilityCode">Disability Code</label>
+                <input type="text" class="form-control" id="disabilityCode" placeholder="Disability Code">
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="form-group">  
+                <label for="dueDate">IEP Due Date</label>
+                <input type="date" class="form-control" id="dueDate">
+                </div>
+            </div>
+    </div>
+    <div>
+        <button id="add" class="btn btn-primary from-control">Add Student</button>
+        </div>  
+
+    </div>
+  </div>
+
+  <br><br>
+  <table id="studentList" class="table table-secondary table-striped">
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Date of Birth</th>
+        <th>Disability Code</th>
+        <th>IEP Due Date</th>
+    </tr>
+
+</table>
+    
+
+ <script src="caseloadmanager.js"></script>  
+ <script src="node_modules/jquery/dist/jquery.js"></script>
+ <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
